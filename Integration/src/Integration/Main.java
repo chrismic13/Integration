@@ -1,4 +1,8 @@
 package Integration;
+
+import java.util.Random;
+import java.util.Scanner;
+
 //Christian McCann
 //This project is a collection of all the knowledge learned this semester in java.
 /*byte - an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive)
@@ -22,7 +26,49 @@ public class Main {
 		String d = "42 is a number";
 		final int fin = 4;
 		//the final keyword makes it so that the value of the variable can not be changed.
+		int e = d.length();
+		//the length() method looks at the string and returns an integer that is the length of the string
+		char f = d.charAt(9);
+		//the charAt() method looks at the string and takes a character from a certain index, in this case the index is 9
+		String g = d.substring(2,8);
+		// the substring() method looks at a string and creates another string using the index numbers that you provide.
+		System.out.println("When using strings, \\ can be used to format the string. it is called and escape sequence. \\\" is used to place a double quote in a String literal");
+		int h = (int)b;
+		//the (int) here is doing something called casting. The b variable is a double, and in order to assign its value to the int h, it has to be "cast" as an integer.
+		double bsquared = square(b);
+		//the square(b) is a method call. when invoked it calls the square method I created below. the variable b is the argument I am passing throught the method. this particular method will return a value of b^2
+		Random rand = new Random();
+		int randnum = rand.nextInt(200);
+		if(randnum >100){
+			System.out.println("The following number is a random number generated that is greater than 100: "+randnum);
+		}else System.out.println("The following number is a random number generated that is 100 or less: "+randnum);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please choose a Skittle type. Type 1 for plain Skittles, 2 for Sour Skittles, or 3 for Tropical Skittles.");
+		int skit = scan.nextInt();
+		scan.close();
+	    String skitString;
+	    switch (skit) {
+	        case 1:  skitString = "You chose plain Skittles!";
+	                 break;
+	        case 2:  skitString = "You chose Sour Skittles!";
+	                 break;
+	        case 3:  skitString = "You chose Tropical Skittles!";
+	                 break;
+	        default: skitString = "You did not enter a 1, 2, or 3. You fail.";
+	                 break;
+	    }
+	    System.out.println(skitString);
+	    String i = "dude";
+	    String j = "dudes";
+	    int k = i.compareTo(j);
+	    System.out.println(k==0 ? "The character sequence of this String object is lexicographically equal to the character sequence of the argument string. " : 
+	    	"The character sequence of this String object is not lexicographically equal to the character sequence of the argument string");
 		
+	}
+	
+	public static double square(double dub){//this is the header, it tells us what the return type of the method is, and the variable type that we want to pass through it. in this case it is a double.
+		double squared = Math.pow(dub, 2);
+		return squared;
 	}
 
 }
