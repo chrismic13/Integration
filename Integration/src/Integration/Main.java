@@ -75,7 +75,7 @@ public class Main {
 		m = m % 3;//this divides m by 3 and assigns the remainder of that division to m
 		m--;//this subtracts 1 from m
 		m++;//this adds 1 to m
-		m += 3;//this adds 3 to m
+		m += 3;//this adds 3 to m.
 		//operator Precedence is when java chooses what operators to use first if multiple operators are in one statement
 	    
 	}
