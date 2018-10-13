@@ -59,11 +59,25 @@ public class Main {
 	    }
 	    System.out.println(skitString);
 	    String i = "dude";
-	    String j = "dudes";
+	    String j = "dude";
+	    boolean l = i.equals(j);
+	    if(i==j)System.out.println("true");else System.out.println("false");
+	    //the == is an operator where compareTo() and equals() are methods, as an operator you can use it to compare objects and data tpes, but with the equals method you can override it to more acurately compare objects, by default it acts in a similar fashion.
+	    System.out.println("The equals method compares character sequences of objects and returns true if they are the same and false if not. The result of the previous use of this method is: "+l);
 	    int k = i.compareTo(j);
 	    System.out.println(k==0 ? "The character sequence of this String object is lexicographically equal to the character sequence of the argument string. " : 
 	    	"The character sequence of this String object is not lexicographically equal to the character sequence of the argument string");
-		
+		int m = 4;
+		m = m + 3;//this adds 3 to the variable m
+		m = m - 3;//this subtracts 3 from m
+		m = m * 3;//this multiplies m by 3
+		m = m / 3;//this divides m by 3
+		m = m % 3;//this divides m by 3 and assigns the remainder of that division to m
+		m--;//this subtracts 1 from m
+		m++;//this adds 1 to m
+		m += 3;//this adds 3 to m
+		//operator Precedence is when java chooses what operators to use first if multiple operators are in one statement
+	    
 	}
 	
 	public static double square(double dub){//this is the header, it tells us what the return type of the method is, and the variable type that we want to pass through it. in this case it is a double.
