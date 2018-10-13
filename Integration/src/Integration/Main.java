@@ -20,33 +20,45 @@ public class Main {
 	public static void main(String[] args) {
 		
 		System.out.println("Welcome to my Integration Project");
+		
 		int a = 42;
+		
 		double b = 42.5;
+		
 		boolean c = false;
+		
 		String d = "42 is a number";
+		
 		final int fin = 4;
 		//the final keyword makes it so that the value of the variable can not be changed.
+		
 		int e = d.length();
 		//the length() method looks at the string and returns an integer that is the length of the string
 		char f = d.charAt(9);
 		//the charAt() method looks at the string and takes a character from a certain index, in this case the index is 9
 		String g = d.substring(2,8);
 		// the substring() method looks at a string and creates another string using the index numbers that you provide.
+		
 		System.out.println("When using strings, \\ can be used to format the string. it is called and escape sequence. \\\" is used to place a double quote in a String literal");
+		
 		int h = (int)b;
 		//the (int) here is doing something called casting. The b variable is a double, and in order to assign its value to the int h, it has to be "cast" as an integer.
+		
 		double bsquared = square(b);
 		//the square(b) is a method call. when invoked it calls the square method I created below. the variable b is the argument I am passing throught the method. this particular method will return a value of b^2
+		
 		Random rand = new Random();
 		int randnum = rand.nextInt(200);
 		if(randnum >100){
 			System.out.println("The following number is a random number generated that is greater than 100: "+randnum);
 		}else System.out.println("The following number is a random number generated that is 100 or less: "+randnum);
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please choose a Skittle type. Type 1 for plain Skittles, 2 for Sour Skittles, or 3 for Tropical Skittles.");
 		int skit = scan.nextInt();
 		scan.close();
-	    String skitString;
+	    
+		String skitString;
 	    switch (skit) {
 	        case 1:  skitString = "You chose plain Skittles!";
 	                 break;
@@ -58,16 +70,19 @@ public class Main {
 	                 break;
 	    }
 	    System.out.println(skitString);
+	    
 	    String i = "dude";
 	    String j = "dude";
 	    boolean l = i.equals(j);
 	    if(i==j)System.out.println("true");else System.out.println("false");
 	    //the == is an operator where compareTo() and equals() are methods, as an operator you can use it to compare objects and data tpes, but with the equals method you can override it to more acurately compare objects, by default it acts in a similar fashion.
+	    
 	    System.out.println("The equals method compares character sequences of objects and returns true if they are the same and false if not. The result of the previous use of this method is: "+l);
 	    int k = i.compareTo(j);
 	    System.out.println(k==0 ? "The character sequence of this String object is lexicographically equal to the character sequence of the argument string. " : 
 	    	"The character sequence of this String object is not lexicographically equal to the character sequence of the argument string");
-		int m = 4;
+		
+	    int m = 4;
 		m = m + 3;//this adds 3 to the variable m
 		m = m - 3;//this subtracts 3 from m
 		m = m * 3;//this multiplies m by 3
