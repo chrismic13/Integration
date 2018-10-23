@@ -60,10 +60,12 @@ public class Main {
 		//double, and in order to assign its value to the int h, it has to be 
 		//"cast" as an integer.
 		
-		double bsquared = square(b);
-		//the square(b) is a method call. when invoked it calls the square method
-		//I created below. the variable b is the argument I am passing through the 
-		//method. this particular method will return a value of b^2
+		Square hh = new Square(b);
+		
+		double bsquared = hh.squared();
+		//the .squared is a method call. when invoked it calls the squared method
+		//in the Square class. The variable b is the argument That is being
+		//squared, i gave it to the object hh when i constructed it.
 		
 		Random rand = new Random();
 		int randnum = rand.nextInt(200);
