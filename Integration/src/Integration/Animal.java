@@ -1,3 +1,8 @@
+//Christian McCann
+//Part of my final integration project.
+//This class along with the dog class 
+//were created to be examples of 
+//inheritance and polymorphism.
 package Integration;
 
 public class Animal {

@@ -1,3 +1,8 @@
+//Christian McCann
+//Part of my integration project
+//example of creating objects from 
+//different classes and using methods
+//on those objects to acomplish goals
 package Integration;
 public class Square {
     

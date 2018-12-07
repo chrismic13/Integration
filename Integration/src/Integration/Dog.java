@@ -1,6 +1,13 @@
+//Christian McCann
+//Part of my integration project
+//This class is a subclass of the animal class and
+//is here to demonstrate the ideas of polymorphism
+//and inheritance.
+
 package Integration;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
+
 	//this class inherits info from the animal class
 	//that is why it "extends"
 	
