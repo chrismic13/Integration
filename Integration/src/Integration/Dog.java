@@ -21,7 +21,7 @@ public class Dog extends Animal{
 	public String getBreed(){
 		return breed;
 	}
-	//this method overrides the get info method frm the 
+	//this method overrides the get info method from the 
 	//Animal class using polymorphism the program knows 
 	//to use this one instead of the one in the animal
 	//class when it is used on a dog.

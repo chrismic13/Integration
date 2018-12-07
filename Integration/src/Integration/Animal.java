@@ -27,7 +27,7 @@ public class Animal {
 	public void setLegs(int legs){
 		this.legs = legs;
 	}
-	
+	//this method is overridden in the dog class
 	public void getInfo(){
 		System.out.println("The animal has "+legs+" legs and is "+age+" years old!");
 	}

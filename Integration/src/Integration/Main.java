@@ -152,7 +152,6 @@ public class Main {
 		    System.out.println(o);
 		}
 		
-		
 		//This is the beginning of my work for PSI 2
 		int fps = 0;
 		while(fps<12){
@@ -275,6 +274,7 @@ public class Main {
 			
 	}
 	
+
 	public static double square(double dub){//this is the header, it tells
 		//us what the return type of the method is, and the variable type
 		//that we want to pass through it. in this case it is a double.
